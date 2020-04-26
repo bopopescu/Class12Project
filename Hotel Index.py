@@ -94,17 +94,28 @@ class MainWindow:
                 root.destroy()
                 return
 
+        def reset():
+            Name.set('')
+            surname.set('')
+            email.set('')
+            Address.set('')
+            Mobile.set('')
+            Room.set('')
+            Meal.set('')
+            Chin.set('')
+            Chout.set('')
+            Cid.set('')
 
         #======================================Buttons============================================================
 
         self.btn1 = Button(buttonframe, bd=4, text='Show Bookings', height=2, width=13, font='arial 16 bold',
-                           activebackground="pink", activeforeground="dark blue").grid(row=0, column=0, pady=6)
+                           activebackground="pink", activeforeground="dark blue", command=shwin).grid(row=0, column=0, pady=6)
 
         self.btn2 = Button(buttonframe, bd=4, text='Submit', height=2, width=13, font='arial 16 bold',
                            activebackground="pink", activeforeground="dark blue").grid(row=1, column=0, pady=6)
 
         self.btn3 = Button(buttonframe, bd=4, text='Clear', height=2, width=13, font='arial 16 bold',
-                           activebackground="pink", activeforeground="dark blue").grid(row=2, column=0, pady=6)
+                           activebackground="pink", activeforeground="dark blue", command=reset).grid(row=2, column=0, pady=6)
 
         self.btn4 = Button(buttonframe, bd=4, text='Cancel', height=2, width=13, font='arial 16 bold',
                            activebackground="pink", activeforeground="dark blue").grid(row=3, column=0, pady=6)
