@@ -6,5 +6,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="Python Codes" />
+    <orderEntry type="module" module-name="Hotel Management System" />
   </component>
 </module>

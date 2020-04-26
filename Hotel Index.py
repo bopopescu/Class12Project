@@ -1,6 +1,7 @@
 from tkinter import *
 from tkinter import ttk
 import tkinter.messagebox
+from Hotel_backend import *
 
 class MainWindow:
     def __init__(self, master):
