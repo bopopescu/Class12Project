@@ -1,36 +1,49 @@
 import mysql.connector
 from tkinter import *
+
 def daily_taasks():
     MyDb = mysql.connector.connect(user="root", password="shivang280703", host="localhost", database="coder01")
     cursor = MyDb.cursor()
-    cursor.execute("delete from bookings where cout <(select curdate())")
-    cursor.execute("update rooms set status=0 where roomn not in (select bookings.roomno from bookings);")
-    mydb.commit()
     MyDb.close()
 
-def shwin():
+
+def showbookings():
     MyDb = mysql.connector.connect(user="root", password="shivang280703", host="localhost", database="coder01")
     cursor = MyDb.cursor()
-    cursor.execute("SELECT bookingid,name,roomno,cin,cout FROM bookings")
-    data = cursor.fetchall()
-    sh = Tk()
-    sh.geometry('520x500')
-    sh.title("CURRENT BOOKINGS")
-    welc = Label(sh, text='Current Bookings', relief='solid', font='times 32 bold').pack()
-    frame = Frame(sh, bd=10, height=600, width=450, relief=RIDGE, bg="powder blue")
-    frame.place(x=20, y=100)
-    h1 = Label(frame, padx=15, text="Booking ID").grid(row=0, column=0)
-    h2 = Label(frame, padx=15, text="Name").grid(row=0, column=1)
-    h3 = Label(frame, padx=15, text="Room No").grid(row=0, column=2)
-    h4 = Label(frame, padx=15, text="Checkin Date").grid(row=0, column=3)
-    h5 = Label(frame, padx=15, text="Checkout Date").grid(row=0, column=4)
-    m = 2
-    for i in data:
-        n = 0
-        for j in i:
-            x = Label(frame, bg="powder blue", padx=15, text=j).grid(row=m, column=n)
-            n += 1
-        m += 2
+    Show=Tk()
+    Show.geometry('1080x750')
+    Show.title("Hotel Management System")
+
+    #===================================================================================================================
+
+    mainframe=Frame(Show, bg='powder blue', padx=10, pady=10)
+    mainframe.pack(fill='both', expand=1)
+
+    heading=Frame(mainframe, bd=14, relief='ridge', bg='ghost white', height=100, width=750, padx=70, pady=5)
+    heading.pack(pady=10)
+
+    content = Frame(mainframe, bd=8, relief='ridge', bg='powder blue', height=600, width=750, padx=25, pady=30)
+    content.pack(pady=10, fill='both', expand=1)
+
+    #===================================================================================================================
+
+    lblheading=Label(heading, text='CURRENT BOOKINGS', font='times 36 bold')
+    lblheading.pack()
+
+    h1 = Label(content, padx=10, text="Booking ID", font='times 16').grid(row=0, column=0)
+    h2 = Label(content, padx=10, text="Name", font='times 16').grid(row=0, column=1)
+    h3 = Label(content, padx=10, text="Surname", font='times 16').grid(row=0, column=2)
+    h4 = Label(content, padx=10, text="Email", font='times 16').grid(row=0, column=3)
+    h5 = Label(content, padx=10, text="Address", font='times 16').grid(row=0, column=4)
+    h1 = Label(content, padx=10, text="Mobile", font='times 16').grid(row=0, column=5)
+    h2 = Label(content, padx=10, text="Room No", font='times 16').grid(row=0, column=6)
+    h3 = Label(content, padx=10, text="Meal", font='times 16').grid(row=0, column=7)
+    h4 = Label(content, padx=10, text="Checkin Date", font='times 16').grid(row=0, column=8)
+    h5 = Label(content, padx=10, text="Checkout Date", font='times 16').grid(row=0, column=9)
+
+    MyDb.close()
     mainloop()
+
 if __name__=='Hotel_backend':
     print('import Successfull')
+showbookings()

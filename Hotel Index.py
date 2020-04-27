@@ -6,7 +6,6 @@ from Hotel_backend import *
 class MainWindow:
     def __init__(self, master):
         self.master=master
-        self.master.title("test")
         self.master.geometry('1330x750')
         self.master.title("Hotel Management System")
         self.master.config(bg='powder blue')
@@ -56,7 +55,7 @@ class MainWindow:
         self.lblname = Label(leftframe, text='Name: ', bg='powder blue', font='times 16 bold').grid(row=0, column=0, pady=5)
         self.txtname = Entry(leftframe, font='times 16 bold', textvariable=Name, width=35).grid(row=0, column=1)
 
-        self.lblsurname = Label(leftframe, text='SurName: ', bg='powder blue', font='times 16 bold').grid(row=1, column=0, pady=5)
+        self.lblsurname = Label(leftframe, text='Surname: ', bg='powder blue', font='times 16 bold').grid(row=1, column=0, pady=5)
         self.txtsurn = Entry(leftframe, font='times 16 bold', textvariable=surname, width=35).grid(row=1, column=1)
 
         self.lblemail = Label(leftframe, text='Email: ', bg='powder blue', font='times 16 bold').grid(row=2, column=0, pady=5)
@@ -109,7 +108,7 @@ class MainWindow:
         #======================================Buttons============================================================
 
         self.btn1 = Button(buttonframe, bd=4, text='Show Bookings', height=2, width=13, font='arial 16 bold',
-                           activebackground="pink", activeforeground="dark blue", command=shwin).grid(row=0, column=0, pady=6)
+                           activebackground="pink", activeforeground="dark blue", command=showbookings).grid(row=0, column=0, pady=6)
 
         self.btn2 = Button(buttonframe, bd=4, text='Submit', height=2, width=13, font='arial 16 bold',
                            activebackground="pink", activeforeground="dark blue").grid(row=1, column=0, pady=6)
