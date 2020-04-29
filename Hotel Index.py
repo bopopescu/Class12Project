@@ -75,20 +75,21 @@ class MainWindow:
             Cid.set('')
 
         def submit():
-            a=Name.get()
-            b=surname.get()
-            c=email.get()
-            d=Address.get()
-            e=Mobile.get()
-            f=Room.get()
-            g=Meal.get()
-            h=Chin.get()
-            i=Chout.get()
-            addnew(a,b,c,d,e,f,g,h,i)
+            a = Name.get()
+            b = surname.get()
+            c = email.get()
+            d = Address.get()
+            e = Mobile.get()
+            f = Room.get()
+            g = Meal.get()
+            h = Chin.get()
+            i = Chout.get()
+            addnew(a, b, c, d, e, f, g, h, i)
 
         def delete():
-            a=str(Cid.get())
+            a = str(Cid.get())
             cancel(a)
+
         # =======================================Widgits============================================================
 
         self.lblwelcome = Label(topframe, text='WELCOME To Hotel TAJ', bg='powder blue', font='times 36 bold').pack(
@@ -147,23 +148,28 @@ class MainWindow:
         self.lblid = Label(rightframe, text='Booking ID ', bg='powder blue', font='times 16 bold').pack(pady=20)
         self.txtid = Entry(rightframe, font='times 16 bold', textvariable=Cid, width=25).pack()
 
-
         # ======================================Buttons============================================================
 
         self.btn1 = Button(buttonframe, bd=4, text='Show Bookings', height=2, width=13, font='arial 16 bold',
-                           activebackground="pink", activeforeground="dark blue", command=showbookings).grid(row=0, column=0, pady=8)
+                           activebackground="pink", activeforeground="dark blue", command=showbookings).grid(row=0,
+                                                                                                             column=0,
+                                                                                                             pady=8)
 
         self.btn2 = Button(buttonframe, bd=4, text='Submit', height=2, width=13, font='arial 16 bold',
-                           activebackground="pink", activeforeground="dark blue", command=submit).grid(row=1, column=0, pady=8)
+                           activebackground="pink", activeforeground="dark blue", command=submit).grid(row=1, column=0,
+                                                                                                       pady=8)
 
         self.btn3 = Button(buttonframe, bd=4, text='Clear', height=2, width=13, font='arial 16 bold',
-                           activebackground="pink", activeforeground="dark blue", command=reset).grid(row=2, column=0, pady=8)
+                           activebackground="pink", activeforeground="dark blue", command=reset).grid(row=2, column=0,
+                                                                                                      pady=8)
 
         self.btn4 = Button(buttonframe, bd=4, text='Cancel', height=2, width=13, font='arial 16 bold',
-                           activebackground="pink", activeforeground="dark blue", command=delete).grid(row=3, column=0, pady=8)
+                           activebackground="pink", activeforeground="dark blue", command=delete).grid(row=3, column=0,
+                                                                                                       pady=8)
 
         self.btn5 = Button(buttonframe, bd=4, text='Exit', height=2, width=13, font='arial 16 bold',
-                           activebackground="pink", activeforeground="dark blue", command=exit).grid(row=4, column=0, pady=8)
+                           activebackground="pink", activeforeground="dark blue", command=exit).grid(row=4, column=0,
+                                                                                                     pady=8)
 
 
 if __name__ == '__main__':

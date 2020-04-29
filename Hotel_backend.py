@@ -13,6 +13,8 @@ def daily_taasks():
     MyDb.close()
 
 def showbookings():
+    """Function to show the bookings currently active in a tabular form"""
+
     MyDb = mysql.connector.connect(user="root", password="shivang280703", host="localhost", database="coder01")
     cursor = MyDb.cursor()
     cursor.execute('SELECT * FROM hotelbookings')
@@ -71,6 +73,8 @@ def showbookings():
         row += 1
 
 def addnew(name,surname,email,address,mobile,rtype,meal,cin,cout):
+    """The add new function used to insert recordsof data in bookings able"""
+
     MyDb = mysql.connector.connect(user="root", password="shivang280703", host="localhost", database="coder01")
     cursor = MyDb.cursor()
     cursor.execute("SELECT roomn FROM rooms WHERE status=0 and type = %s", (rtype,))
@@ -93,6 +97,8 @@ def addnew(name,surname,email,address,mobile,rtype,meal,cin,cout):
     MyDb.close()
 
 def cancel(id):
+    """Cancel function to delete a currently active booking"""
+
     MyDb = mysql.connector.connect(user="root", password="shivang280703", host="localhost", database="coder01")
     cursor = MyDb.cursor()
     response=tkinter.messagebox.askquestion("Confirm", "Are you sure?")
@@ -107,5 +113,4 @@ def cancel(id):
     MyDb.close()
 
 if __name__ == 'Hotel_backend':
-    print('Import Successfull')
     daily_taasks()
