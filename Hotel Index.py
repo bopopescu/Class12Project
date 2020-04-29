@@ -6,7 +6,7 @@ from Hotel_backend import *
 class MainWindow:
     def __init__(self, master):
         self.master=master
-        self.master.geometry('1330x750')
+        self.master.geometry('1330x750+0+0')
         self.master.title("Hotel Management System")
         self.master.config(bg='powder blue')
 

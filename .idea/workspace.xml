@@ -2,14 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f914f33f-d835-4de8-8b70-221e682dc103" name="Default Changelist" comment="">
-      <change beforePath="$USER_HOME$/Desktop/Hotel Management System/maingui.py" beforeDir="false" afterPath="$USER_HOME$/Desktop/Hotel Management System/maingui.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frame test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel Index.py" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel Index.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hotel_backend.py" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel_backend.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -25,23 +44,25 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Python" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\shiva\Documents\Class12project" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Hotel Index">
+  <component name="RunManager" selected="Python.frame test">
     <configuration name="Hotel Index" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Class12project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -78,6 +99,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Hotel_backend.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="frame test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Class12project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/frame test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -135,9 +178,11 @@
       <item itemvalue="Python.Hotel Index" />
       <item itemvalue="Python.Hotel_backend" />
       <item itemvalue="Python.maingui" />
+      <item itemvalue="Python.frame test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.frame test" />
         <item itemvalue="Python.Hotel Index" />
         <item itemvalue="Python.Hotel_backend" />
         <item itemvalue="Python.maingui" />
@@ -156,7 +201,22 @@
       <updated>1587911425007</updated>
       <workItem from="1587911442265" duration="3526000" />
       <workItem from="1587926103709" duration="1294000" />
-      <workItem from="1587972064357" duration="4513000" />
+      <workItem from="1587972064357" duration="4600000" />
+      <workItem from="1587977382527" duration="1011000" />
+      <workItem from="1588000822051" duration="2917000" />
+      <workItem from="1588052740018" duration="5916000" />
+      <workItem from="1588060987242" duration="306000" />
+      <workItem from="1588061427044" duration="819000" />
+      <workItem from="1588063178750" duration="47000" />
+      <workItem from="1588063294796" duration="67000" />
+      <workItem from="1588063510351" duration="35000" />
+      <workItem from="1588063573424" duration="98000" />
+      <workItem from="1588064015313" duration="541000" />
+      <workItem from="1588064654338" duration="1606000" />
+      <workItem from="1588089747777" duration="4542000" />
+      <workItem from="1588136831010" duration="292000" />
+      <workItem from="1588152358992" duration="4040000" />
+      <workItem from="1588156840268" duration="772000" />
     </task>
     <task id="LOCAL-00001" summary="Created new Project">
       <created>1587912384441</created>
@@ -179,11 +239,30 @@
       <option name="project" value="LOCAL" />
       <updated>1587975476189</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="showbookings window">
+      <created>1587976647328</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1587976647328</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created new Project" />
@@ -192,67 +271,97 @@
     <option name="LAST_COMMIT_MESSAGE" value="showbookings window" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="223" y="67" width="1089" height="740" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587914269137">
+    <state x="654" y="275" key="#Notifications" timestamp="1588061200038">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="654" y="275" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1588061200038" />
+    <state x="223" y="67" width="1089" height="740" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588002664385">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/0.-768.1360.728@0.0.1536.824" timestamp="1588002664385" />
     <state x="223" y="67" width="1089" height="740" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1587914269137" />
-    <state x="393" y="7" key="CommitChangelistDialog2" timestamp="1587975475517">
+    <state x="543" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588061166712">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1587975475517" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1587911731685">
+    <state x="543" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1588061166712" />
+    <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1588064542344">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1587911731685" />
-    <state width="758" height="182" key="GridCell.Tab.0.bottom" timestamp="1587976629288">
+    <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1588064542344" />
+    <state x="393" y="7" key="CommitChangelistDialog2" timestamp="1587976646273">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="393" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1587976646273" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1588063541902">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1588063541902" />
+    <state width="758" height="274" key="GridCell.Tab.0.bottom" timestamp="1588157433607">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="758" height="182" key="GridCell.Tab.0.bottom/0.0.1536.824/-1360.0.1360.728@0.0.1536.824" timestamp="1587920126656" />
-    <state width="758" height="182" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587976629288" />
-    <state width="758" height="182" key="GridCell.Tab.0.center" timestamp="1587976629288">
+    <state width="746" height="247" key="GridCell.Tab.0.bottom/0.0.1536.824/0.-768.1360.728@0.0.1536.824" timestamp="1588002893286" />
+    <state width="758" height="274" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1588157433607" />
+    <state width="758" height="182" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1588056737327" />
+    <state width="758" height="274" key="GridCell.Tab.0.center" timestamp="1588157433606">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="758" height="182" key="GridCell.Tab.0.center/0.0.1536.824/-1360.0.1360.728@0.0.1536.824" timestamp="1587920126620" />
-    <state width="758" height="182" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587976629288" />
-    <state width="758" height="182" key="GridCell.Tab.0.left" timestamp="1587976629288">
+    <state width="746" height="247" key="GridCell.Tab.0.center/0.0.1536.824/0.-768.1360.728@0.0.1536.824" timestamp="1588002893286" />
+    <state width="758" height="274" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1588157433606" />
+    <state width="758" height="182" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1588056737327" />
+    <state width="758" height="274" key="GridCell.Tab.0.left" timestamp="1588157433605">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="758" height="182" key="GridCell.Tab.0.left/0.0.1536.824/-1360.0.1360.728@0.0.1536.824" timestamp="1587920126575" />
-    <state width="758" height="182" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587976629288" />
-    <state width="758" height="182" key="GridCell.Tab.0.right" timestamp="1587976629288">
+    <state width="746" height="247" key="GridCell.Tab.0.left/0.0.1536.824/0.-768.1360.728@0.0.1536.824" timestamp="1588002893286" />
+    <state width="758" height="274" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1588157433605" />
+    <state width="758" height="182" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1588056737327" />
+    <state width="758" height="274" key="GridCell.Tab.0.right" timestamp="1588157433607">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="758" height="182" key="GridCell.Tab.0.right/0.0.1536.824/-1360.0.1360.728@0.0.1536.824" timestamp="1587920126645" />
-    <state width="758" height="182" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587976629288" />
-    <state width="746" height="252" key="GridCell.Tab.1.bottom" timestamp="1587975683638">
+    <state width="746" height="247" key="GridCell.Tab.0.right/0.0.1536.824/0.-768.1360.728@0.0.1536.824" timestamp="1588002893286" />
+    <state width="758" height="274" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1588157433607" />
+    <state width="758" height="182" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1588056737327" />
+    <state width="746" height="252" key="GridCell.Tab.1.bottom" timestamp="1588153915614">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="252" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587975683638" />
-    <state width="746" height="252" key="GridCell.Tab.1.center" timestamp="1587975683638">
+    <state width="746" height="252" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1588153915614" />
+    <state width="746" height="252" key="GridCell.Tab.1.center" timestamp="1588153915614">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="252" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1587975683638" />
-    <state width="746" height="252" key="GridCell.Tab.1.left" timestamp="1587975683638">
+    <state width="746" height="252" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1588153915614" />
+    <state width="746" height="252" key="GridCell.Tab.1.left" timestamp="1588153915614">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="252" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1587975683638" />
-    <state width="746" height="252" key="GridCell.Tab.1.right" timestamp="1587975683638">
+    <state width="746" height="252" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1588153915614" />
+    <state width="746" height="252" key="GridCell.Tab.1.right" timestamp="1588153915614">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="252" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1587975683638" />
-    <state x="48" y="48" key="SettingsEditor" timestamp="1587914334064">
+    <state width="746" height="252" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1588153915614" />
+    <state x="111" y="47" key="SettingsEditor" timestamp="1588064778725">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="48" y="48" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1587914334064" />
+    <state x="111" y="47" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1588064778725" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1587975479146">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1587975479146" />
+    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588061193163">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1588061193163" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1588064783706">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1588064783706" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Class12project$Hotel_Index.coverage" NAME="Hotel Index Coverage Results" MODIFIED="1588156888689" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Class12project$python.coverage" NAME="python Coverage Results" MODIFIED="1587911806173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Class12project$maingui.coverage" NAME="maingui Coverage Results" MODIFIED="1587975719029" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop/Hotel Management System" />
-    <SUITE FILE_PATH="coverage/Class12project$Hotel_Index.coverage" NAME="Hotel Index Coverage Results" MODIFIED="1587976629273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Class12project$Hotel_backend.coverage" NAME="Hotel_backend Coverage Results" MODIFIED="1587976580496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Class12project$frame_test.coverage" NAME="frame test Coverage Results" MODIFIED="1588157766753" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
