@@ -5,7 +5,7 @@ import tkinter.messagebox
 def daily_taasks():
     """Removes bookings that have ended and set room status unoccupied which aren't booked currently"""
 
-    MyDb = mysql.connector.connect(user="root", password="shivang280703", host="localhost", database="coder01")
+    MyDb = mysql.connector.connect(user="root", password="", host="localhost", database="coder01")
     cursor = MyDb.cursor()
     cursor.execute("DELETE FROM hotelbookings WHERE cout <(SELECT curdate())")
     cursor.execute("UPDATE rooms SET status=0 WHERE roomn NOT IN (SELECT hotelbookings.roomno FROM hotelbookings);")
@@ -15,7 +15,7 @@ def daily_taasks():
 def showbookings():
     """Function to show the bookings currently active in a tabular form"""
 
-    MyDb = mysql.connector.connect(user="root", password="shivang280703", host="localhost", database="coder01")
+    MyDb = mysql.connector.connect(user="root", password="", host="localhost", database="coder01")
     cursor = MyDb.cursor()
     cursor.execute('SELECT * FROM hotelbookings')
     Data = cursor.fetchall()
@@ -75,7 +75,7 @@ def showbookings():
 def addnew(name,surname,email,address,mobile,rtype,meal,cin,cout):
     """The add new function used to insert recordsof data in bookings able"""
 
-    MyDb = mysql.connector.connect(user="root", password="shivang280703", host="localhost", database="coder01")
+    MyDb = mysql.connector.connect(user="root", password="", host="localhost", database="coder01")
     cursor = MyDb.cursor()
     cursor.execute("SELECT roomn FROM rooms WHERE status=0 and type = %s", (rtype,))
     nolist = cursor.fetchall()
@@ -99,7 +99,7 @@ def addnew(name,surname,email,address,mobile,rtype,meal,cin,cout):
 def cancel(id):
     """Cancel function to delete a currently active booking"""
 
-    MyDb = mysql.connector.connect(user="root", password="shivang280703", host="localhost", database="coder01")
+    MyDb = mysql.connector.connect(user="root", password="", host="localhost", database="coder01")
     cursor = MyDb.cursor()
     response=tkinter.messagebox.askquestion("Confirm", "Are you sure?")
     if response=='yes':
