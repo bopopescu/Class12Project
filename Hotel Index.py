@@ -124,7 +124,7 @@ class MainWindow:
                                                                                                          column=0,
                                                                                                          pady=5)
         self.cboroom = ttk.Combobox(leftframe, textvariable=Room, state='readonly', font='times 15', width=35,
-                                    value=('Single Deluxe', 'Double Deluxe', 'Executive', 'Family Suit')).grid(row=5,
+                                    value=('Single Deluxe', 'Double Deluxe', 'Executive', 'Suit')).grid(row=5,
                                                                                                                column=1)
 
         self.lblmeal = Label(leftframe, text='Meal Type: ', bg='powder blue', font='times 16 bold').grid(row=6,
