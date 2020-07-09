@@ -110,9 +110,7 @@ class MainWindow:
                                                                                                       pady=5)
         self.txtemail = Entry(leftframe, font='times 16 bold', textvariable=email, width=35).grid(row=2, column=1)
 
-        self.lbladdress = Label(leftframe, text='Address: ', bg='powder blue', font='times 16 bold').grid(row=3,
-                                                                                                          column=0,
-                                                                                                          pady=5)
+        self.lbladdress = Label(leftframe, text='Address: ', bg='powder blue', font='times 16 bold').grid(row=3,column=0,pady=5)
         self.txtaddress = Entry(leftframe, font='times 16 bold', textvariable=Address, width=35).grid(row=3, column=1)
 
         self.lblmobile = Label(leftframe, text='Mobile No.', bg='powder blue', font='times 16 bold').grid(row=4,
