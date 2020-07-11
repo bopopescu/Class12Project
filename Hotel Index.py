@@ -96,17 +96,13 @@ class MainWindow:
         self.lblnew = Label(midframe, text='  New Bookings  ', bg='cadet blue', font='times 25 bold',
                             relief='solid').place(x=263, y=40)
 
-        self.lblname = Label(leftframe, text='Name: ', bg='powder blue', font='times 16 bold').grid(row=0, column=0,
-                                                                                                    pady=5)
+        self.lblname = Label(leftframe, text='Name: ', bg='powder blue', font='times 16 bold').grid(row=0, column=0, pady=5)
         self.txtname = Entry(leftframe, font='times 16 bold', textvariable=Name, width=35).grid(row=0, column=1)
 
-        self.lblsurname = Label(leftframe, text='Surname: ', bg='powder blue', font='times 16 bold').grid(row=1,
-                                                                                                          column=0,
-                                                                                                          pady=5)
+        self.lblsurname = Label(leftframe, text='Surname: ', bg='powder blue', font='times 16 bold').grid(row=1, column=0, pady=5)
         self.txtsurn = Entry(leftframe, font='times 16 bold', textvariable=Surname, width=35).grid(row=1, column=1)
 
-        self.lblemail = Label(leftframe, text='Email: ', bg='powder blue', font='times 16 bold').grid(row=2, column=0,
-                                                                                                      pady=5)
+        self.lblemail = Label(leftframe, text='Email: ', bg='powder blue', font='times 16 bold').grid(row=2, column=0, pady=5)
         self.txtemail = Entry(leftframe, font='times 16 bold', textvariable=Email, width=35).grid(row=2, column=1)
 
         self.lbladdress = Label(leftframe, text='Address: ', bg='powder blue', font='times 16 bold').grid(row=3,column=0,pady=5)
