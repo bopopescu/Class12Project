@@ -43,8 +43,8 @@ class MainWindow:
         buttonframe.grid_propagate(0)
 
         Name = StringVar()
-        surname = StringVar()
-        email = StringVar()
+        Surname = StringVar()
+        Email = StringVar()
         Address = StringVar()
         Mobile = StringVar()
         Room = StringVar()
@@ -63,8 +63,8 @@ class MainWindow:
 
         def reset():
             Name.set('')
-            surname.set('')
-            email.set('')
+            Surname.set('')
+            Email.set('')
             Address.set('')
             Mobile.set('')
             Room.set('')
@@ -75,8 +75,8 @@ class MainWindow:
 
         def submit():
             a = Name.get()
-            b = surname.get()
-            c = email.get()
+            b = Surname.get()
+            c = Email.get()
             d = Address.get()
             e = Mobile.get()
             f = Room.get()
@@ -103,11 +103,11 @@ class MainWindow:
         self.lblsurname = Label(leftframe, text='Surname: ', bg='powder blue', font='times 16 bold').grid(row=1,
                                                                                                           column=0,
                                                                                                           pady=5)
-        self.txtsurn = Entry(leftframe, font='times 16 bold', textvariable=surname, width=35).grid(row=1, column=1)
+        self.txtsurn = Entry(leftframe, font='times 16 bold', textvariable=Surname, width=35).grid(row=1, column=1)
 
         self.lblemail = Label(leftframe, text='Email: ', bg='powder blue', font='times 16 bold').grid(row=2, column=0,
                                                                                                       pady=5)
-        self.txtemail = Entry(leftframe, font='times 16 bold', textvariable=email, width=35).grid(row=2, column=1)
+        self.txtemail = Entry(leftframe, font='times 16 bold', textvariable=Email, width=35).grid(row=2, column=1)
 
         self.lbladdress = Label(leftframe, text='Address: ', bg='powder blue', font='times 16 bold').grid(row=3,column=0,pady=5)
         self.txtaddress = Entry(leftframe, font='times 16 bold', textvariable=Address, width=35).grid(row=3, column=1)
