@@ -57,11 +57,11 @@ def showbookings():
     h3 = Label(content, padx=20, text="Surname", font='times 16').grid(row=0, column=2)
     h4 = Label(content, padx=50, text="Email", font='times 16').grid(row=0, column=3)
     h5 = Label(content, padx=50, text="Address", font='times 16').grid(row=0, column=4)
-    h1 = Label(content, padx=60, text="Mobile", font='times 16').grid(row=0, column=5)
-    h2 = Label(content, padx=15, text="Room No", font='times 16').grid(row=0, column=6)
-    h3 = Label(content, padx=15, text="Meal", font='times 16').grid(row=0, column=7)
-    h4 = Label(content, padx=15, text="Checkin Date", font='times 16').grid(row=0, column=8)
-    h5 = Label(content, padx=15, text="Checkout Date", font='times 16').grid(row=0, column=9)
+    h6 = Label(content, padx=60, text="Mobile", font='times 16').grid(row=0, column=5)
+    h7 = Label(content, padx=15, text="Room No", font='times 16').grid(row=0, column=6)
+    h8 = Label(content, padx=15, text="Meal", font='times 16').grid(row=0, column=7)
+    h9 = Label(content, padx=15, text="Checkin Date", font='times 16').grid(row=0, column=8)
+    h10 = Label(content, padx=15, text="Checkout Date", font='times 16').grid(row=0, column=9)
 
     row = 1
     for i in Data:

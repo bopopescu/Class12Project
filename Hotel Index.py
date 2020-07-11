@@ -38,8 +38,7 @@ class MainWindow:
         rightframe.pack(side=RIGHT)
         rightframe.pack_propagate(0)
 
-        buttonframe = Frame(sideframe, bd=14, bg='powder blue', relief='ridge', height=765, width=330, padx=58.4,
-                            pady=154)
+        buttonframe = Frame(sideframe, bd=14, bg='powder blue', relief='ridge', height=765, width=330, padx=58.4, pady=154)
         buttonframe.pack()
         buttonframe.grid_propagate(0)
 
@@ -92,8 +91,8 @@ class MainWindow:
 
         # =======================================Widgits============================================================
 
-        self.lblwelcome = Label(topframe, text='WELCOME To Hotel TAJ', bg='powder blue', font='times 36 bold').pack(
-            pady=5)
+        self.lblwelcome = Label(topframe, text='WELCOME To Hotel TAJ', bg='powder blue', font='times 36 bold').pack(pady=5)
+
         self.lblnew = Label(midframe, text='  New Bookings  ', bg='cadet blue', font='times 25 bold',
                             relief='solid').place(x=263, y=40)
 
@@ -113,14 +112,12 @@ class MainWindow:
         self.lbladdress = Label(leftframe, text='Address: ', bg='powder blue', font='times 16 bold').grid(row=3,column=0,pady=5)
         self.txtaddress = Entry(leftframe, font='times 16 bold', textvariable=Address, width=35).grid(row=3, column=1)
 
-        self.lblmobile = Label(leftframe, text='Mobile No.', bg='powder blue', font='times 16 bold').grid(row=4,
-                                                                                                          column=0,
-                                                                                                          pady=5)
+        self.lblmobile = Label(leftframe, text='Mobile No.', bg='powder blue', font='times 16 bold').grid(row=4, column=0, pady=5)
         self.txtmobile = Entry(leftframe, font='times 16 bold', textvariable=Mobile, width=35).grid(row=4, column=1)
 
         self.lblroom = Label(leftframe, text='Room Type: ', bg='powder blue', font='times 16 bold').grid(row=5, column=0, pady=5)
         self.cboroom = ttk.Combobox(leftframe, textvariable=Room, state='readonly', font='times 15', width=35,
-                                    value=('Single Deluxe', 'Double Deluxe', 'Executive', 'Suit')).grid(row=5,column=1)
+                                    value=('Single Deluxe', 'Double Deluxe', 'Executive', 'Suit')).grid(row=5, column=1)
 
         self.lblmeal = Label(leftframe, text='Meal Type: ', bg='powder blue', font='times 16 bold').grid(row=6, column=0, pady=5)
         self.cbomeal = ttk.Combobox(leftframe, textvariable=Meal, state='readonly', font='times 15', width=35,
