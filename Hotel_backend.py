@@ -2,6 +2,7 @@ from tkinter import *
 import mysql.connector
 import tkinter.messagebox
 
+
 def daily_taasks():
     """Removes bookings that have ended and set room status unoccupied which aren't booked currently"""
 
@@ -11,6 +12,7 @@ def daily_taasks():
     cursor.execute("UPDATE rooms SET status=0 WHERE roomn NOT IN (SELECT hotelbookings.roomno FROM hotelbookings);")
     MyDb.commit()
     MyDb.close()
+
 
 def showbookings():
     """Function to show the bookings currently active in a tabular form"""
@@ -72,8 +74,10 @@ def showbookings():
             column += 1
         row += 1
 
-def addnew(name,surname,email,address,mobile,rtype,meal,cin,cout):
+
+def addnew(name, surname, email, address, mobile, rtype, meal, cin, cout):
     """The add new function used to insert recordsof data in bookings able"""
+
 
     MyDb = mysql.connector.connect(user="root", password="12345", host="localhost", database="coder01")
     cursor = MyDb.cursor()
@@ -84,33 +88,35 @@ def addnew(name,surname,email,address,mobile,rtype,meal,cin,cout):
         tkinter.messagebox.showerror("Error", "No Rooms Available")
     else:
         roomno = nolist[0][0]
-        sql = "INSERT INTO hotelbookings (name,surname,email,address,mobile,roomno,meal,cin,cout) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)"
+        sql = "INSERT INTO hotelbookings (name, surname, email, address, mobile, roomno ,meal, cin, cout) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)"
         val = (name, surname, email, address, mobile, roomno, meal, cin, cout )
         cursor.execute(sql, val)
 
     cursor.execute("SELECT bookingid,roomno FROM hotelbookings WHERE roomno=%s", (roomno,))
     showdata = cursor.fetchall()
-    tkinter.messagebox.showinfo("ID & Room No.","Your Booking ID is: " + str(showdata[0][0]) + " and Room No is: " + str(showdata[0][1]))
+    tkinter.messagebox.showinfo("ID & Room No.", "Your Booking ID is: " + str(showdata[0][0]) + " and Room No is: " + str(showdata[0][1]))
     cursor.execute("UPDATE rooms SET status=1 WHERE roomn=%s", (roomno,))
 
     MyDb.commit()
     MyDb.close()
+
 
 def cancel(id):
     """Cancel function to delete a currently active booking"""
 
     MyDb = mysql.connector.connect(user="root", password="12345", host="localhost", database="coder01")
     cursor = MyDb.cursor()
-    response=tkinter.messagebox.askquestion("Confirm", "Are you sure?")
-    if response=='yes':
+    response = tkinter.messagebox.askquestion("Confirm", "Are you sure?")
+    if response == 'yes':
         cursor.execute("SELECT bookingid FROM hotelbookings WHERE bookingid=%s", (id,))
-        if len(cursor.fetchall())==0:
+        if len(cursor.fetchall()) == 0:
             tkinter.messagebox.showerror("Error", "No Such Booking")
         else:
             cursor.execute("DELETE FROM hotelbookings WHERE bookingid=%s", (id,))
             tkinter.messagebox.showinfo("Message", "Booking Has been Canceled")
             MyDb.commit()
     MyDb.close()
+
 
 if __name__ == 'Hotel_backend':
     daily_taasks()
