@@ -38,7 +38,8 @@ class MainWindow:
         rightframe.pack(side=RIGHT)
         rightframe.pack_propagate(0)
 
-        buttonframe = Frame(sideframe, bd=14, bg='powder blue', relief='ridge', height=765, width=330, padx=58.4, pady=154)
+        buttonframe = Frame(sideframe, bd=14, bg='powder blue', relief='ridge', height=765, width=330, padx=58.4,
+                            pady=154)
         buttonframe.pack()
         buttonframe.grid_propagate(0)
 
@@ -91,38 +92,55 @@ class MainWindow:
 
         # =======================================Widgits============================================================
 
-        self.lblwelcome = Label(topframe, text='WELCOME To Hotel TAJ', bg='powder blue', font='times 36 bold').pack(pady=5)
+        self.lblwelcome = Label(topframe, text='WELCOME To Hotel TAJ', bg='powder blue', font='times 36 bold').pack(
+            pady=5)
 
         self.lblnew = Label(midframe, text='  New Bookings  ', bg='cadet blue', font='times 25 bold',
                             relief='solid').place(x=263, y=40)
 
-        self.lblname = Label(leftframe, text='Name: ', bg='powder blue', font='times 16 bold').grid(row=0, column=0, pady=5)
+        self.lblname = Label(leftframe, text='Name: ', bg='powder blue', font='times 16 bold').grid(row=0, column=0,
+                                                                                                    pady=5)
         self.txtname = Entry(leftframe, font='times 16 bold', textvariable=Name, width=35).grid(row=0, column=1)
 
-        self.lblsurname = Label(leftframe, text='Surname: ', bg='powder blue', font='times 16 bold').grid(row=1, column=0, pady=5)
+        self.lblsurname = Label(leftframe, text='Surname: ', bg='powder blue', font='times 16 bold').grid(row=1,
+                                                                                                          column=0,
+                                                                                                          pady=5)
         self.txtsurn = Entry(leftframe, font='times 16 bold', textvariable=Surname, width=35).grid(row=1, column=1)
 
-        self.lblemail = Label(leftframe, text='Email: ', bg='powder blue', font='times 16 bold').grid(row=2, column=0, pady=5)
+        self.lblemail = Label(leftframe, text='Email: ', bg='powder blue', font='times 16 bold').grid(row=2, column=0,
+                                                                                                      pady=5)
         self.txtemail = Entry(leftframe, font='times 16 bold', textvariable=Email, width=35).grid(row=2, column=1)
 
-        self.lbladdress = Label(leftframe, text='Address: ', bg='powder blue', font='times 16 bold').grid(row=3,column=0,pady=5)
+        self.lbladdress = Label(leftframe, text='Address: ', bg='powder blue', font='times 16 bold').grid(row=3,
+                                                                                                          column=0,
+                                                                                                          pady=5)
         self.txtaddress = Entry(leftframe, font='times 16 bold', textvariable=Address, width=35).grid(row=3, column=1)
 
-        self.lblmobile = Label(leftframe, text='Mobile No.', bg='powder blue', font='times 16 bold').grid(row=4, column=0, pady=5)
+        self.lblmobile = Label(leftframe, text='Mobile No.', bg='powder blue', font='times 16 bold').grid(row=4,
+                                                                                                          column=0,
+                                                                                                          pady=5)
         self.txtmobile = Entry(leftframe, font='times 16 bold', textvariable=Mobile, width=35).grid(row=4, column=1)
 
-        self.lblroom = Label(leftframe, text='Room Type: ', bg='powder blue', font='times 16 bold').grid(row=5, column=0, pady=5)
+        self.lblroom = Label(leftframe, text='Room Type: ', bg='powder blue', font='times 16 bold').grid(row=5,
+                                                                                                         column=0,
+                                                                                                         pady=5)
         self.cboroom = ttk.Combobox(leftframe, textvariable=Room, state='readonly', font='times 15', width=35,
                                     value=('Single Deluxe', 'Double Deluxe', 'Executive', 'Suit')).grid(row=5, column=1)
 
-        self.lblmeal = Label(leftframe, text='Meal Type: ', bg='powder blue', font='times 16 bold').grid(row=6, column=0, pady=5)
+        self.lblmeal = Label(leftframe, text='Meal Type: ', bg='powder blue', font='times 16 bold').grid(row=6,
+                                                                                                         column=0,
+                                                                                                         pady=5)
         self.cbomeal = ttk.Combobox(leftframe, textvariable=Meal, state='readonly', font='times 15', width=35,
                                     value=('Breakfast', 'Dinner', 'Combo', 'All three')).grid(row=6, column=1)
 
-        self.lblcheckin = Label(leftframe, text='Check In Date: ', bg='powder blue', font='times 16 bold').grid(row=7, column=0, pady=5)
+        self.lblcheckin = Label(leftframe, text='Check In Date: ', bg='powder blue', font='times 16 bold').grid(row=7,
+                                                                                                                column=0,
+                                                                                                                pady=5)
         self.txtchecin = Entry(leftframe, font='times 16 bold', textvariable=Chin, width=25).grid(row=7, column=1)
 
-        self.lblcheckout = Label(leftframe, text='Check Out Date: ', bg='powder blue', font='times 16 bold').grid(row=8, column=0, pady=5)
+        self.lblcheckout = Label(leftframe, text='Check Out Date: ', bg='powder blue', font='times 16 bold').grid(row=8,
+                                                                                                                  column=0,
+                                                                                                                  pady=5)
         self.txtcheckout = Entry(leftframe, font='times 16 bold', textvariable=Chout, width=25).grid(row=8, column=1)
 
         self.lblcancel = Label(rightframe, text='  Cancel Bookings  ', bg='cadet blue', font='times 25 bold',
@@ -133,19 +151,25 @@ class MainWindow:
         # ======================================Buttons============================================================
 
         self.btn1 = Button(buttonframe, bd=4, text='Show Bookings', height=2, width=13, font='arial 16 bold',
-                           activebackground="pink", activeforeground="dark blue", command=showbookings).grid(row=0, column=0, pady=8)
+                           activebackground="pink", activeforeground="dark blue", command=showbookings).grid(row=0,
+                                                                                                             column=0,
+                                                                                                             pady=8)
 
         self.btn2 = Button(buttonframe, bd=4, text='Submit', height=2, width=13, font='arial 16 bold',
-                           activebackground="pink", activeforeground="dark blue", command=submit).grid(row=1, column=0, pady=8)
+                           activebackground="pink", activeforeground="dark blue", command=submit).grid(row=1, column=0,
+                                                                                                       pady=8)
 
         self.btn3 = Button(buttonframe, bd=4, text='Clear', height=2, width=13, font='arial 16 bold',
-                           activebackground="pink", activeforeground="dark blue", command=reset).grid(row=2, column=0, pady=8)
+                           activebackground="pink", activeforeground="dark blue", command=reset).grid(row=2, column=0,
+                                                                                                      pady=8)
 
         self.btn4 = Button(buttonframe, bd=4, text='Cancel', height=2, width=13, font='arial 16 bold',
-                           activebackground="pink", activeforeground="dark blue", command=delete).grid(row=3, column=0, pady=8)
+                           activebackground="pink", activeforeground="dark blue", command=delete).grid(row=3, column=0,
+                                                                                                       pady=8)
 
         self.btn5 = Button(buttonframe, bd=4, text='Exit', height=2, width=13, font='arial 16 bold',
-                           activebackground="pink", activeforeground="dark blue", command=exit).grid(row=4, column=0, pady=8)
+                           activebackground="pink", activeforeground="dark blue", command=exit).grid(row=4, column=0,
+                                                                                                     pady=8)
 
 
 if __name__ == '__main__':
