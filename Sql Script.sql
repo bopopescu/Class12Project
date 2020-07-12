@@ -1,3 +1,5 @@
+create database if not exists coder01;
+
 create table if not exists coder01.rooms
 (
     roomn  int not null  primary key,
