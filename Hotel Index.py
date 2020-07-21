@@ -3,15 +3,15 @@ from Hotel_backend import *
 
 
 class MainWindow:
-    def __init__(self, master):
-        self.master = master
-        self.master.geometry('1530x770+0+0')
-        self.master.title("Hotel Management System")
-        self.master.config(bg='powder blue')
+    def __init__(self, main):
+        self.main = main
+        self.main.geometry('1530x770+0+0')
+        self.main.title("Hotel Management System")
+        self.main.config(bg='powder blue')
 
         # ======================================Frames============================================================
 
-        frame = Frame(self.master, height=770, width=1530)
+        frame = Frame(self.main, height=770, width=1530)
         frame.pack()
 
         mainframe = Frame(frame, height=765, width=1200)
